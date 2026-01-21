@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Macedonia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bcard">
+    <h1>Macedonia Quiz</h1>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <p>What is the capital of Macedonia?</p>
+
+    <button onclick="checkAnswer(1, 'Skopje')">Skopje</button>
+    <button onclick="checkAnswer(1, 'Ohrid')">Ohrid</button>
+    <button onclick="checkAnswer(1, 'Shtip')">Shtip</button>
+    <button onclick="checkAnswer(1, 'Bitola')">Bitola</button>
+
+
+    <p id="result1"></p>
+    
+    <p>Macedonia is located in which region of Europe?</p>
+
+    <button onclick="checkAnswer(2, 'Eastern Europe')">Eastern Europe</button>
+    <button onclick="checkAnswer(2, 'Western Europe')">Western Europer</button>
+    <button onclick="checkAnswer(2, 'Southern Europe (Balkans)')">Southern Europe (Balkans)</button>
+    <button onclick="checkAnswer(2, 'Northern Europe')">Northern Europe</button>
+
+    <p id="result2"></p>
+
+    <p>What is the official language of Macedonia?</p>
+
+    <button onclick="checkAnswer(3, 'Serbian')">Serbian</button>
+    <button onclick="checkAnswer(3, 'Macedonian')">Macedonian</button>
+    <button onclick="checkAnswer(3, 'German')">German</button>
+    <button onclick="checkAnswer(3, 'English')">English</button>
+
+    <p id="result3"></p>
+
+    <p>What currency is used in Macedonia?</p>
+
+    <button onclick="checkAnswer(4, 'Euro')">Euro</button>
+    <button onclick="checkAnswer(4, 'Dollar')">Dollar</button>
+    <button onclick="checkAnswer(4, 'Denar')">Denar</button>
+    <button onclick="checkAnswer(4, 'Dinar')">Dinar</button>
+
+    <p id="result4"></p>
+
+    <p>Which country is NOT a neighbor of Macedonia?</p>
+    <button onclick="checkAnswer(5, 'Greece')">Greece</button>
+    <button onclick="checkAnswer(5, 'Bulgaria')">Bulgaria</button>
+    <button onclick="checkAnswer(5, 'Croatia')">Croatia</button>
+    <button onclick="checkAnswer(5, 'Albania')">Albania</button>
+
+    <p id="result5"></p>
+
+    <h2 class="score">
+    Score: <span id="score">0</span><br>
+    Progress: <span id="progress">0 / 5</span>
+    </h2>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
